@@ -25,3 +25,10 @@ margin:20px 40px 60px;(上20px；左、右40px；下60px)
 margin:20px 40px 60px 80px;(上20px；右40px；下60px；左80px)
 padding同理
 ```
+## CSS中calc()方法无效属性值问题
+```
+width:calc(50%-20px);
+这样书写是无效的因为calc中计算的两个因子同运算符号之间必须存在空格；
+正确格式为：
+width:calc(50% - 20px);
+```
