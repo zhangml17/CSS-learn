@@ -32,3 +32,4 @@ width:calc(50%-20px);
 正确格式为：
 width:calc(50% - 20px);
 ```
+## [CSS3中calc在less编译时被计算的问题](https://blog.csdn.net/playboyanta123/article/details/50408335)
