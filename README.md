@@ -33,3 +33,8 @@ width:calc(50%-20px);
 width:calc(50% - 20px);
 ```
 ## [CSS3中calc在less编译时被计算的问题](https://blog.csdn.net/playboyanta123/article/details/50408335)
+### less中使用calc进行变量运算
+```
+写法：@{变量}
+width: calc(~"100% - (@{mainGap} * 3)px");
+```
