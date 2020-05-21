@@ -38,3 +38,12 @@ width:calc(50% - 20px);
 写法：@{变量}
 width: calc(~"100% - (@{mainGap} * 3)px");
 ```
+## 弹性布局
+### 垂直水平居中
+```
+.flex {
+  display: flex;
+  align-items: center; // 垂直居中
+  justify-content: center; // 水平居中
+}
+```
