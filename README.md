@@ -47,3 +47,14 @@ width: calc(~"100% - (@{mainGap} * 3)px");
   justify-content: center; // 水平居中
 }
 ```
+## [vue中以变量引入src地址](https://zhuanlan.zhihu.com/p/88897041)
+```
+export default {
+  data() {
+    return  {
+      imgSrc: require("../../common/images/logo.png")
+    }
+  }
+}
+```
+
