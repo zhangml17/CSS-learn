@@ -57,4 +57,26 @@ export default {
   }
 }
 ```
+## [非input元素实现placeholder效果](https://blog.csdn.net/m0_37922914/article/details/100152825)
+```
+ul {
+  padding: 5px 0;
+  li {
+    min-height: 19px;
+    font-size: 14px;
+    word-break: break-all;
+    
+    &:empty::before {
+      content:"请输入内容...";
+      backgrround-color: #efefef;
+      color: #000;
+      font-size: 12px;
+    }
+    
+    &:focus::before {
+      content: none;
+    }
+  }
+}
+```
 
