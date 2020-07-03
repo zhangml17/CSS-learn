@@ -79,4 +79,7 @@ ul {
   }
 }
 ```
-
+## inline-block问题[参考链接](https://www.cnblogs.com/fantianlong/p/11386994.html)
+当使用inline-block布局的元素时，会发现元素之间总是有一定的小间距
+### 原因
+元素被当成行内元素排版的时候，元素之间的空白符（空格、回车换行等）都会被浏览器处理，根据white-space的处理方式(默认是normal,空白会被浏览器忽略)，HTML代码中的回车换行被转成一个空白符，在字体不为0的情况下，空白符占据一定宽度，所以inline-block的元素之间就出现了空隙。
